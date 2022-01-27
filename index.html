@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nossa loja oferece diversos produtos especiais, confira...">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <h2>Cadastro Loja</h2>
+
+    <form method="GET" action="#">
+        <fieldset>
+            <legend>Conta:</legend>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" required minlength="5" maxlength="256" size="15" /><br/><br/>
+            </div>
+
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" required size="15" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" placeholder="Ex: Bruno" name="nome" required size="15" /><br/><br/>
+            </div>
+
+            <div>
+                <label>Telefone:</label>
+                <input type="text" placeholder="Ex:(83) 99999-9999" name="telefone" required size="13" /><br/><br/>
+            </div>
+
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" value="Masculino" name="sexo" checked />
+                <label>Masculino</label>
+                <input type="radio" value="Feminino" name="sexo" />
+                <label>Feminino</label><br/><br/>
+            </div>
+            <div>
+                <Label>Data:</Label>
+                <input type="date" name="data_nascimento" required/><br/><br/>
+            </div>
+
+            <div>
+                <label>Foto de Perfil:</label>
+                <input type="file" accept="image/*" name="foto_perfil">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label>Rua:</label>
+                <input type="text" name="rua" required size="17"><br/><br/>
+            </div>
+
+            <div>
+                <label>Complemento:</label>
+                <input type="text" name="complemento" required size="8" /><br/><br/>
+            </div>
+
+            <div>
+                <label>Número:</label>
+                <input type="number" min="1" max="9999" name="numero_casa" required size="17" /><br/><br/>
+            </div>
+
+            <div>
+                <label>Cidade:</label>
+                <input type="text" name="cidade" required size="15" /><br/><br/>
+            </div>
+
+            <div>
+                <label>Estado:</label>
+                <select name="uf" required>
+                    <option value="rio de janeiro">Rio de Janeiro</option>
+                    <option value="sao paulo">São Paulo</option>
+                    <option value="paraiba">Paraíba</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Anúncio:</legend>
+            <div>
+                <label>Como conheceu a Loja?</label>
+                <textarea maxlength="256" placeholder="Explique para a gente como você conheceu a nossa loja..." name="como_conheceu"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" checked name="receber_anuncio">
+                <label>Desejo reeceber ofertas por e-mail</label>
+            </div>
+        </fieldset><br/><br/>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
